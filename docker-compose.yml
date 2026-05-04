@@ -1,5 +1,18 @@
+version: "3.9"
+
 services:
-  agentic-firewall:
+  firewall:
     build: .
+    command: python firewall.py
+    volumes:
+      - .:/app
+
+  gateway:
+    build: .
+    command: python gateway.py
     ports:
-      - "8080:8080"
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - firewall
