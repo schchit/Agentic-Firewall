@@ -1,5 +1,0 @@
-services:
-  agentic-firewall:
-    build: .
-    ports:
-      - "8080:8080"

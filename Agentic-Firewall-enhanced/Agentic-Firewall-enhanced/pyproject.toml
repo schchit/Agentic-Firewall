@@ -1,9 +1,0 @@
-[project]
-name = "agentic-firewall-enhanced"
-version = "4.0.0"
-description = "Risk-aware communication firewall for multi-agent systems with target determinability, semantic loss checks, uncertainty cascade detection, verifier placement, and audit packets."
-requires-python = ">=3.10"
-dependencies = ["fastapi>=0.115.0", "uvicorn>=0.32.0", "pydantic>=2.10.0"]
-
-[tool.setuptools]
-py-modules = ["audit", "cascade", "determinability", "firewall", "gateway", "semantic_loss"]

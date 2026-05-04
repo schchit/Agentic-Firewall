@@ -1,6 +1,0 @@
-{
-  "sample-transform-key": {
-    "tenant": "demo",
-    "scopes": ["transform", "admin"]
-  }
-}
